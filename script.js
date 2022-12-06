@@ -1,0 +1,11 @@
+const phonePrice = 119.95;
+let phoneQuantity = 30;
+let totalPrice;
+let totalTax;
+let taxRate;
+taxRate = 5 / 100 * phonePrice;
+totalPrice = phonePrice * phoneQuantity;
+totalTax = phoneQuantity * taxRate;
+console.log("Total price for 30 phones, without tax, in $:",totalPrice);
+console.log("Total tax in $:", totalTax);
+console.log("Total in $:",totalPrice + totalTax);
