@@ -8,13 +8,13 @@ function humanYears (dogYears) {
     return humanYears;
 }
 
-let personChoice = prompt(`Enter HY for human yaers and DY for dog years.`);
+let personChoice = prompt(`Enter HY for human yaers and DY for dog years.`).toLowerCase();
 let userInput = Number(prompt(`Please insert value:`));
 
-if (personChoice === "HY") {
-    console.log(`${userInput} dog years is ${humanYears (userInput)} human years.`);
-}else if (personChoice=== "DY") {
-    console.log(`${userInput} human years is ${dogYears(userInput)} dog years.`)
+if (personChoice === "hy") {
+    console.log(`${userInput} dog years is ${humanYears(userInput)} human years.`).toFixed(2);
+}else if (personChoice=== "dy") {
+    console.log(`${userInput} human years is ${dogYears(userInput)} dog years.`).toFixed(2);
 }else {
     console.log(`Invalid input.`)
 }
