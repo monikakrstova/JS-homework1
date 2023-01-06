@@ -1,0 +1,9 @@
+let firstDiv = document.querySelector("div");
+let paragraphs = document.getElementsByTagName("p");
+let lastDiv = document.getElementsByTagName("body")[0].lastElementChild;
+let header3last = lastDiv.getElementsByTagName("h3")[0];
+let header1last = header3last.previousElementSibling;
+let paragraphSecondText = document.getElementsByClassName("second")[0].innerText;
+document.querySelector("text").innerText += " text!";
+header3last.innerHTML = "Text added from JS";
+header1last.innerHTML = "Text added from JS too.";
